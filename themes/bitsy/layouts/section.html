@@ -1,0 +1,38 @@
+{{ define "main" }}
+  <section class="bumper">
+    <header class="header container">
+      <h1 class="headline">{{ .Title }}</h1>
+    </header>
+
+    <div class="container">
+      {{ if .Content }}
+        <div class="markdown">
+          {{ .Content }}
+        </div>
+      {{ end }}
+      {{ if .Pages }}
+        <div class="tiles">
+          {{ range .Pages }}
+            <article class="tile">
+              <header class="tile-header">
+                {{ if .Date }}
+                  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+                  {{ $dateHuman := .Date | time.Format ":date_long" }}
+                  <time class="fineprint" datetime="{{ $dateMachine }}">
+                    {{ $dateHuman }}
+                  </time>
+                {{ end }}
+                <h2 class="subheading sans-margin-block">
+                  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                </h2>
+              </header>
+              <div class="teaser-summary">
+                <p class="graph">{{ .Summary }}</p>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
