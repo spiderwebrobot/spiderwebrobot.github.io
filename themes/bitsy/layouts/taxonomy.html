@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <div class="bumper">
+    <header class="header container">
+      <h1 class="headline">{{ .Title }}</h1>
+    </header>
+    <div class="container">
+      <div class="markdown">
+        {{ .Content }}
+        <ol>
+          {{ range .Pages }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ol>
+      </div>
+    </div>
+  </div>
+{{ end }}

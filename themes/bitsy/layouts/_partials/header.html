@@ -1,0 +1,21 @@
+<div class="bumper-inline">
+  <div class="container">
+    <div class="brand">
+      <a href="{{ site.BaseURL }}" class="brand-anchor">
+        {{ with resources.Get "images/logo.svg" }}
+          <img
+            src="{{ .RelPermalink }}"
+            width="36"
+            height="36"
+            alt="{{ site.Title }} logo"
+            class="brand-anchor-logo"
+          />
+        {{ else }}
+          <strong class="brand-anchor-text">
+            {{ site.Title }}
+          </strong>
+        {{ end }}
+      </a>
+    </div>
+  </div>
+</div>

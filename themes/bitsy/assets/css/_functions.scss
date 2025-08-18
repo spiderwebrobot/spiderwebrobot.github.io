@@ -1,0 +1,19 @@
+@function getRem($pixels) {
+  @return ($pixels / 16);
+}
+
+@function fluid($min, $max, $minViewport: 480, $maxViewport: 768) {
+  $minSize: getRem($min);
+  $maxSize: getRem($max);
+  $minWidth: getRem($minViewport);
+  $maxWidth: getRem($maxViewport);
+  $slope: ($maxSize - $minSize) / ($maxWidth - $minWidth);
+  $intersection: -$minWidth * $slope + $minSize;
+  @return clamp(
+    #{$minSize}rem,
+    #{$intersection}rem + #{$slope * 100}vw,
+    #{$maxSize}rem
+  );
+}
+
+// Thanks [Pedro Rodriguez](https://css-tricks.com/author/pedrorodriguez/) for [CSS-Tricks: Linearly Scale font-size with CSS clamp() Based on the Viewport](https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/#for-those-who-dont-mind-that-edge-case).

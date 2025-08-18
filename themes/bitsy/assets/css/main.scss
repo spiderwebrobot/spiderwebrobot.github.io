@@ -1,0 +1,312 @@
+@import "functions";
+@import "normalize";
+
+// variables
+
+:root {
+  --bumper: #{fluid(24, 32)};
+  --bumper-large: #{fluid(40, 80)};
+  // --font-family: "Roboto", Helvetica, Arial, sans-serif;
+  --font-family: monospace;
+  --font-size: #{fluid(16, 24)};
+  --font-size-headline: #{fluid(32, 48)};
+  --font-size-heading: #{fluid(24, 40)};
+  --font-size-subheading: #{fluid(20, 32)};
+  --font-size-small: #{fluid(12, 16)};
+  --font-weight: 400;
+  --font-weight-demi: 600;
+  // --line-height: 1.44;
+  --line-height: 2;
+  --line-height-heading: 1.5;
+  --max-width: 60rem;
+}
+
+// website
+
+.website {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.website-header {
+  background-color: black;
+}
+
+.website-footer {
+  background-color: whitesmoke;
+}
+
+// structure
+
+.bumper {
+  padding-block: var(--bumper-large);
+  padding-inline: var(--bumper);
+}
+
+.bumper-block-start {
+  padding-block-start: 2rem;
+}
+
+.bumper-block {
+  padding-block: var(--bumper-large);
+}
+
+.bumper-inline {
+  padding-inline: var(--bumper);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+// layout
+
+.menu-bar {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  column-gap: 0.5lh;
+}
+
+.link-list {
+  // reset
+  list-style-type: none;
+  margin-block: 0;
+  padding-inline-start: 0;
+  // grid
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  column-gap: 1lh;
+}
+
+// brand
+
+.brand {
+  display: grid;
+}
+
+.brand-anchor {
+  justify-self: end;
+}
+
+.brand-anchor,
+.brand-anchor-logo {
+  display: block;
+}
+
+.brand-anchor-text {
+  color: lime;
+  line-height: 2.25rem;
+}
+
+//
+
+.sans-margin-block {
+  margin-block: 0;
+}
+
+// footer
+
+.footer-content {
+  font-family: var(--font-family);
+}
+
+.footer-content > p {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height);
+  margin-block: 1lh;
+}
+
+// header
+
+.header {
+  font-family: var(--font-family);
+  margin-block-end: 2rem;
+}
+
+.header .headline {
+  margin-block: 0;
+}
+
+.header .menu-bar {
+  margin-block-start: 0.25lh;
+}
+
+// typography
+
+.headline {
+  font-size: var(--font-size-headline);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height-heading);
+  text-wrap: balance;
+}
+
+.heading {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-demi);
+  line-height: var(--line-height-heading);
+}
+
+.subheading {
+  font-size: var(--font-size-subheading);
+  font-weight: var(--font-weight-demi);
+  line-height: var(--line-height-heading);
+}
+
+.graph {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  margin-block-end: 0;
+  &:first-child {
+    margin-block-start: 0;
+  }
+}
+
+.fineprint {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height);
+}
+
+// markdown
+
+.markdown {
+  font-family: var(--font-family);
+}
+
+// markdown headings
+
+.markdown > h1 {
+  font-size: var(--font-size-headline);
+  font-weight: var(--font-weight);
+}
+
+.markdown > h2 {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-demi);
+}
+
+.markdown > h3 {
+  font-size: var(--font-size-subheading);
+  font-weight: var(--font-weight-demi);
+}
+
+.markdown > h1,
+.markdown > h2,
+.markdown > h3,
+.markdown > h4,
+.markdown > h5,
+.markdown > h6 {
+  line-height: var(--line-height-heading);
+  margin-block-end: 0;
+  &:first-child {
+    margin-block-start: 0;
+  }
+}
+
+.markdown > h1 + *,
+.markdown > h2 + *,
+.markdown > h3 + *,
+.markdown > h4 + *,
+.markdown > h5 + *,
+.markdown > h6 + * {
+  margin-block-start: 1lh;
+}
+
+// markdown paragraphs, lists, blockquotes, and tables
+
+.markdown > p,
+.markdown > ul,
+.markdown > ol,
+.markdown > blockquote,
+.markdown > table {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  margin-block-end: 0;
+  &:first-child {
+    margin-block-start: 0;
+  }
+}
+
+.markdown > p + *,
+.markdown > ul + *,
+.markdown > ol + *,
+.markdown > blockquote + *,
+.markdown > table + * {
+  margin-block-start: 1lh;
+}
+
+.markdown > p + h2,
+.markdown > ul + h2,
+.markdown > ol + h2,
+.markdown > blockquote + h2,
+.markdown > table + h2 {
+  margin-block-start: 2lh;
+}
+
+.markdown > blockquote {
+  background: whitesmoke;
+  margin-inline: 0;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+
+.markdown > blockquote > p {
+  margin-block: 0;
+}
+
+.markdown > p > code,
+.markdown > ol > li > code,
+.markdown > ul > li > code {
+  background-color: whitesmoke;
+}
+
+// footnotes
+
+.footnotes > hr {
+  border: 0;
+  height: 1px;
+  background: whitesmoke;
+}
+
+// tiles
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.tile {
+  font-family: var(--font-family);
+}
+
+// code snippets
+
+.highlight {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  display: grid;
+}
+
+.highlight + * {
+  margin-block-start: 1lh;
+}
+
+.highlight + h2 {
+  margin-block-start: 2lh;
+}
+
+.highlight > pre {
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.highlight > pre > code {
+  display: inline-block;
+}

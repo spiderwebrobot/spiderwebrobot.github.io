@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div class="bumper">
+    <header class="header container">
+      <h1 class="headline">{{ or .Params.Headline .Title }}</h1>
+    </header>
+
+    <div class="container">
+      <div class="markdown">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+{{ end }}
