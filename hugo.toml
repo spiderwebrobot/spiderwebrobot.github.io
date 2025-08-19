@@ -2,6 +2,9 @@ baseURL = 'https://spiderwebrobot.github.io/'
 languageCode = 'en-us'
 title = 'spiderwebrobot'
 theme = 'bitsy'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 [markup]
   [markup.highlight]
     anchorLineNos = false
