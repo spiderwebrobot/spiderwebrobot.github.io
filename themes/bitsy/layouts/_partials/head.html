@@ -4,6 +4,6 @@
 
 {{ $style := resources.Get "css/main.scss" | css.Sass }}
 {{ if hugo.IsProduction }}
-  {{ $style := resources.Minify | resources.Fingerprint }}
+  {{ $style = $style | resources.Minify | resources.Fingerprint }}
 {{ end }}
 <link rel="stylesheet" href="{{ $style.Permalink }}" />
