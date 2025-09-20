@@ -1,13 +1,22 @@
 @import "functions";
 @import "normalize";
 
+// font face
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: auto; // swap
+  src: url("/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
 // variables
 
 :root {
   --bumper: #{fluid(24, 32)};
   --bumper-large: #{fluid(40, 80)};
-  // --font-family: "Roboto", Helvetica, Arial, sans-serif;
-  --font-family: monospace;
+  --font-family: "Roboto", Helvetica, Arial, sans-serif;
   --font-size: #{fluid(16, 24)};
   --font-size-headline: #{fluid(32, 48)};
   --font-size-heading: #{fluid(24, 40)};
@@ -16,7 +25,7 @@
   --font-weight: 400;
   --font-weight-demi: 600;
   // --line-height: 1.44;
-  --line-height: 2;
+  --line-height: 1.8;
   --line-height-heading: 1.5;
   --max-width: 60rem;
 }
