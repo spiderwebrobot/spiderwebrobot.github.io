@@ -2,6 +2,14 @@
 <meta name="viewport" content="width=device-width" />
 <title>{{ printf "%s | %s" .Title site.Title }}</title>
 
+<link
+  rel="preload"
+  href="/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf"
+  as="font"
+  type="font/ttf"
+  crossorigin
+/>
+
 {{ $style := resources.Get "css/main.scss" | css.Sass }}
 {{ if hugo.IsProduction }}
   {{ $style = $style | resources.Minify | resources.Fingerprint }}
