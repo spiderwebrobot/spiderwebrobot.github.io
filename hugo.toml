@@ -1,4 +1,4 @@
-baseURL = 'https://spiderwebrobot.github.io/'
+baseURL = 'https://spiderwebrobot.com/'
 languageCode = 'en-us'
 title = 'spiderwebrobot'
 theme = 'bitsy'
