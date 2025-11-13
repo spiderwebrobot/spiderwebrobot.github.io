@@ -163,6 +163,7 @@
   font-size: var(--font-size-subheading);
   font-weight: var(--font-weight-demi);
   line-height: var(--line-height-heading);
+  text-wrap: balance;
 }
 
 .graph {
@@ -285,7 +286,7 @@
 .tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  column-gap: 4rem;
+  column-gap: 3rem;
   row-gap: 2rem;
 }
 

@@ -1,13 +1,14 @@
 +++
 date = '2025-11-08T09:49:53-08:00'
 draft = false
-title = 'Creating a GitHub Account'
+title = 'Creating a GitHub account'
 summary = 'Manage your online identity.'
 +++
 
-You’ll need an email address to [sign up](https://github.com/signup) for GitHub. [Gmail](https://support.google.com/mail/answer/56256) is a solid choice if you don’t already have one. A Gmail account allows you to [Sign in with Google](https://www.google.com/account/about/sign-in-with-google/), which is a key that can unlock many doors. That being said, if you’d rather not put all of your eggs in one basket, here are some alternatives:
+You’ll need an email address to [sign up](https://github.com/signup) for GitHub. [Gmail](https://support.google.com/mail/answer/56256) is a solid choice if you don’t already have one. A Gmail account allows you to [Sign in with Google](https://www.google.com/account/about/sign-in-with-google/), which is a key that can unlock many doors. That said, here are some alternatives for good measure:
 
-- [Microsoft Outlook](https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook)
+- [iCloud Mail](https://www.icloud.com/mail) (Apple)
+- [Outlook](https://www.outlook.com) (Microsoft)
 - [Proton Mail](https://proton.me/mail)
 - [Yahoo Mail](https://mail.yahoo.com/)
 
