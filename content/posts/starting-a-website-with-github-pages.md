@@ -1,6 +1,6 @@
 +++
-date = '2025-11-09T09:41:15-08:00'
-draft = true
+date = '2025-11-13T09:41:15-08:00'
+draft = false
 title = 'Starting a website with Github Pages'
 summary = 'Host your website at github.io'
 +++
