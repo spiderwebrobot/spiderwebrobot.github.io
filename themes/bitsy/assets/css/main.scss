@@ -21,12 +21,12 @@
   --font-size-headline: #{fluid(32, 48)};
   --font-size-heading: #{fluid(24, 40)};
   --font-size-subheading: #{fluid(20, 32)};
-  --font-size-small: #{fluid(12, 16)};
+  --font-size-small: #{fluid(12, 14)};
   --font-weight: 400;
   --font-weight-demi: 600;
-  // --line-height: 1.44;
   --line-height: 1.8;
   --line-height-heading: 1.5;
+  --line-height-min: 1.44;
   --max-width: 60rem;
 }
 
@@ -111,12 +111,6 @@
   line-height: 2.25rem;
 }
 
-//
-
-.sans-margin-block {
-  margin-block: 0;
-}
-
 // footer
 
 .footer-content {
@@ -157,13 +151,6 @@
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-demi);
   line-height: var(--line-height-heading);
-}
-
-.subheading {
-  font-size: var(--font-size-subheading);
-  font-weight: var(--font-weight-demi);
-  line-height: var(--line-height-heading);
-  text-wrap: balance;
 }
 
 .graph {
@@ -256,6 +243,11 @@
   margin-block-start: 2lh;
 }
 
+.markdown > ul,
+.markdown > ol {
+  padding-inline-start: 2ch;
+}
+
 .markdown > blockquote {
   background: whitesmoke;
   margin-inline: 0;
@@ -292,6 +284,8 @@
 
 .tile {
   font-family: var(--font-family);
+  line-height: var(--line-height-min);
+  text-wrap: pretty;
 }
 
 // code snippets
@@ -319,4 +313,10 @@
 
 .highlight > pre > code {
   display: inline-block;
+}
+
+// utilities
+
+.sans-margin-block {
+  margin-block: 0;
 }

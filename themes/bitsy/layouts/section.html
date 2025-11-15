@@ -22,12 +22,12 @@
                     {{ $dateHuman }}
                   </time>
                 {{ end }}
-                <h2 class="subheading sans-margin-block">
+                <h2 class="sans-margin-block">
                   <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
                 </h2>
               </header>
-              <div class="teaser-summary">
-                <p class="graph">{{ .Summary }}</p>
+              <div class="tile-body">
+                <p class="graph sans-margin-block">{{ .Summary }}</p>
               </div>
             </article>
           {{ end }}
