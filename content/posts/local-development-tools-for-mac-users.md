@@ -29,7 +29,9 @@ sudo xcode-select --install
 
 After typing in your password, your terminal should return...
 
-> xcode-select: note: install requested for command line developer tools
+```plaintext
+xcode-select: note: install requested for command line developer tools
+```
 
 And an “install” dialog should pop open...
 
@@ -45,7 +47,9 @@ xcode-select -p
 
 Your terminal should return...
 
-> /Library/Developer/CommandLineTools
+```plaintext
+/Library/Developer/CommandLineTools
+```
 
 ## Install Homebrew
 
@@ -59,7 +63,9 @@ which brew
 
 If `brew` is already installed, your terminal should return...
 
-> /usr/local/bin/brew
+```plaintext
+/usr/local/bin/brew
+```
 
 Otherwise follow the instructions at https://brew.sh/.
 
@@ -87,7 +93,9 @@ which git
 
 If `git` is already installed, your terminal should return…
 
-> /usr/local/bin/git
+```plaintext
+/usr/local/bin/git
+```
 
 Otherwise run...
 

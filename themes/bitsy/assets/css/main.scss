@@ -144,7 +144,7 @@
   font-size: var(--font-size-headline);
   font-weight: var(--font-weight);
   line-height: var(--line-height-heading);
-  text-wrap: balance;
+  // text-wrap: balance;
 }
 
 .heading {
@@ -171,6 +171,7 @@
 
 .markdown {
   font-family: var(--font-family);
+  word-break: break-word;
 }
 
 // markdown headings
@@ -285,7 +286,7 @@
 .tile {
   font-family: var(--font-family);
   line-height: var(--line-height-min);
-  text-wrap: pretty;
+  // text-wrap: pretty;
 }
 
 // code snippets
