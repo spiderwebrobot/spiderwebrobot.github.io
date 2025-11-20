@@ -144,7 +144,7 @@
   font-size: var(--font-size-headline);
   font-weight: var(--font-weight);
   line-height: var(--line-height-heading);
-  // text-wrap: balance;
+  text-wrap: pretty;
 }
 
 .heading {
@@ -278,15 +278,18 @@
 
 .tiles {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  column-gap: 3rem;
+  grid-template-columns: 1fr;
   row-gap: 2rem;
+  @media (min-width: 24rem) {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    column-gap: 3rem;
+  }
 }
 
 .tile {
   font-family: var(--font-family);
   line-height: var(--line-height-min);
-  // text-wrap: pretty;
+  text-wrap: pretty;
 }
 
 // code snippets
