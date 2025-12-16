@@ -1,6 +1,6 @@
 +++
 date = '2025-12-15T07:53:19-08:00'
-draft = true
+draft = false
 title = 'GitHub authentication with SSH'
 summary = 'Command line access.'
 +++
