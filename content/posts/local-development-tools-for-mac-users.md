@@ -5,7 +5,7 @@ title = 'Local development tools for Mac users'
 summary = 'A good place to start.'
 +++
 
-Macs are expensive. Check out [refurbished Macs](https://www.apple.com/shop/refurbished/mac) for affordable options. Otherwise, [financing](https://www.apple.com/shop/browse/financing), and [educational discounts](https://www.apple.com/us-edu/store) are available if you qualify.
+Macs are expensive. Check out [refurbished Macs](https://www.apple.com/shop/refurbished/mac) for affordable options. Otherwise, [financing](https://www.apple.com/shop/browse/financing) and [educational discounts](https://www.apple.com/us-edu/store) are available if you qualify.
 
 ## Terminal
 

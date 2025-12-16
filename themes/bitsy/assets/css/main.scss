@@ -23,6 +23,7 @@
   --font-size-subheading: #{fluid(20, 32)};
   --font-size-small: #{fluid(12, 14)};
   --font-weight: 400;
+  --font-weight-medium: 500;
   --font-weight-demi: 600;
   --line-height: 1.8;
   --line-height-heading: 1.5;
@@ -236,13 +237,13 @@
   margin-block-start: 1lh;
 }
 
-.markdown > p + h2,
-.markdown > ul + h2,
-.markdown > ol + h2,
-.markdown > blockquote + h2,
-.markdown > table + h2 {
-  margin-block-start: 2lh;
-}
+// .markdown > p + h2,
+// .markdown > ul + h2,
+// .markdown > ol + h2,
+// .markdown > blockquote + h2,
+// .markdown > table + h2 {
+//   margin-block-start: 2lh;
+// }
 
 .markdown > ul,
 .markdown > ol {
@@ -304,9 +305,9 @@
   margin-block-start: 1lh;
 }
 
-.highlight + h2 {
-  margin-block-start: 2lh;
-}
+// .highlight + h2 {
+//   margin-block-start: 2lh;
+// }
 
 .highlight > pre {
   overflow-x: auto;
@@ -323,4 +324,8 @@
 
 .sans-margin-block {
   margin-block: 0;
+}
+
+.medium-bold {
+  font-weight: var(--font-weight-medium);
 }
