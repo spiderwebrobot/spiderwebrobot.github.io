@@ -1,6 +1,6 @@
 +++
 date = '2025-12-20T08:23:12-08:00'
-draft = true
+draft = false
 title = 'Cloning a GitHub repository'
 summary = 'Create a local copy.'
 +++
