@@ -1,7 +1,7 @@
 +++
 date = '2025-07-05T06:59:20-07:00'
 draft = false
-title = 'Local development tools for Mac users'
+title = 'Local development for Mac users'
 summary = 'A good place to start.'
 +++
 

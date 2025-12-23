@@ -5,7 +5,7 @@ title = 'GitHub authentication with SSH'
 summary = 'Command line access.'
 +++
 
-[SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh) keys give you access to your code repositories through the command line. The command line can be executed in the [terminal](/posts/local-development-tools-for-mac-users/#terminal) for Mac users.
+[SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh) keys give you access to your code repositories through the command line. The command line can be executed in the [terminal](/posts/local-development-for-mac-users/#terminal) for Mac users.
 
 ## Generating new SSH keys
 
@@ -128,7 +128,7 @@ Identity added: /Users/username/.ssh/id_ed25519 (your@email.com)
 
 ### Killing the agent
 
-Now that you have securely stored your private key’s password, let's do some clean up. First let’s find all of `ssh-agent` processes currently running...
+Now that you have securely stored your private key’s password, let's do some clean up. First let’s find all of the `ssh-agent` processes currently running...
 
 ```sh
 pgrep ssh-agent
