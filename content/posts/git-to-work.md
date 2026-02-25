@@ -1,5 +1,5 @@
 +++
-date = '2025-12-24T06:32:20-08:00'
+date = '2026-02-18T06:32:20-08:00'
 draft = true
 title = 'Git to work'
 summary = 'Version control.'
@@ -111,7 +111,7 @@ Your terminal should return something like...
  1 file changed, 12 insertions(+), 1 deletion(-)
 ```
 
-## Syncing with the main
+## Syncing with main
 
 After committing your changes, check out `main`...
 
@@ -143,7 +143,7 @@ Your terminal should return something like...
 Already up to date.
 ```
 
-## Pushing your commits
+## Pushing commits
 
 After syncing with `main`, push your changes...
 
@@ -151,23 +151,51 @@ After syncing with `main`, push your changes...
 git push
 ```
 
-## Create a pull-request
+The terminal should return something like...
 
-1. Open a browser
-2. Navigate to the "Your branches" page, e.g. `https://github.com/spiderwebrobot/spiderwebrobot.github.io/branches`
-3. On the "Your branches" page, click on the "..." associated with your branch to expand the menu.
-4. Click on the "New pull request" option from in the expanded menu
-4. On the "Comparing changes" page, click on the "Create pull request" button
+```plaintext
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 2.20 KiB | 2.20 MiB/s, done.
+Total 10 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote: 
+remote: Create a pull request for 'chore/update-readme' on GitHub by visiting:
+remote:      https://github.com/spiderwebrobot/spiderwebrobot.github.io/pull/new/chore/update-readme
+remote: 
+To github.com:spiderwebrobot/spiderwebrobot.github.io.git
+ * [new branch]      chore/update-readme -> chore/update-readme
+```
 
-## Deployment
+## Creating a pull-request
 
-1. Open a browser
-2. Navigate to the "Pull requests" page, e.g. `https://github.com/spiderwebrobot/spiderwebrobot.github.io/pulls`
-3. On the "Pull requests" page, click on the feature-branch to be merged
-4. Select "Squash and merge" from the "Merge pull request" dropdown menu (if it is not already selected)
-5. Click on the "Squash and merge" button
-6. Click on the "Confirm squash and merge" button
-7. Click on the "Delete branch" button
+Open a browser, [log into GitHub](https://github.com/login), and navigate to the “Branches” page, e.g...
+
+```plaintext
+https://github.com/spiderwebrobot/spiderwebrobot.github.io/branches
+```
+
+On the “Branches” page, click on the “...” button to expand your branch’s menu, and then click on the “New pull request” option, e.g...
+
+```plaintext
+https://github.com/spiderwebrobot/spiderwebrobot.github.io/pull/new/chore/update-readme
+```
+
+On the “Open a pull request” page, click on the “Create pull request” button.
+
+## Merging a pull-request
+
+Open a browser and navigate to the “Pull requests” page, e.g....
+
+```plaintext
+https://github.com/spiderwebrobot/spiderwebrobot.github.io/pulls
+```
+
+On the “Pull requests” page, click on the pull request to be merged, and then select “Squash and merge" from the “Merge pull request” dropdown menu.
+
+Click on the “Squash and merge” button, then click on the “Confirm squash and merge” button, and finally, click on the “Delete branch” button.
 
 ## Resources
 
