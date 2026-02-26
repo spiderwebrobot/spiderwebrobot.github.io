@@ -1,6 +1,6 @@
 +++
 date = '2026-02-18T06:32:20-08:00'
-draft = true
+draft = false
 title = 'Git to work'
 summary = 'Version control.'
 +++
