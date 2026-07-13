@@ -6,6 +6,11 @@ theme = 'bitsy'
   [caches.images]
     dir = ':cacheDir/images'
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
