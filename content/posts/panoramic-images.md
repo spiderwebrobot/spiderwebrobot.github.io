@@ -5,7 +5,7 @@ title = 'Panoramic images'
 summary = 'Moving pictures.'
 +++
 
-Hey team, let’s position an oversized image inside of a viewport with CSS [translate](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate). Check out this [proof of concept](https://codepen.io/spiderwebrobot/live/ogzJxZK) as we dig into the details.
+Hey team, let’s explore an oversized image with CSS [translate](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate). Check out this [proof of concept](https://codepen.io/spiderwebrobot/live/ogzJxZK) as we dig into the details.
 
 ## The building blocks
 
